@@ -8,10 +8,8 @@ So far, that's all we provide:
 Example:
 ```
 import { Controller } from 'stimulus'
-
 export default class extends Controller {
   static target = [ 'test' ]
-
   connect() {
     console.log('Hello from my_controller.js')
     console.log(this.testTarget)
