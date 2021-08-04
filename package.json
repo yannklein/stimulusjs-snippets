@@ -1,11 +1,12 @@
 {
     "name": "stimulusjs-snippets",
-    "displayName": "stimulusjs-snippets",
+    "displayName": "StimulusJS Snippets",
     "description": "Simple Snippets for Stimulus JS",
     "version": "0.1.0",
     "engines": {
         "vscode": "^1.58.0"
     },
+    "icon": "images/logo.jpg",
     "categories": [
         "Snippets"
     ],
