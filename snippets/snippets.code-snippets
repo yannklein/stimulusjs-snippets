@@ -1,0 +1,19 @@
+{
+	"Controller template": {
+			"scope": "javascript,typescript",
+			"prefix": "sjc",
+			"body": [
+				"import { Controller } from 'stimulus'",
+				"",
+				"export default class extends Controller {",
+				"  static target = [ 'test' ]",
+				"",
+				"  connect() {",
+				"    console.log('Hello from $TM_FILENAME')",
+				"    console.log(this.testTarget)",
+				"  }",
+				"}"
+			],
+			"description": "StimulusJS Controller template"
+		}
+}
