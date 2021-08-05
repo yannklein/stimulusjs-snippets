@@ -10,11 +10,13 @@ Example:
 
 ```
 import { Controller } from 'stimulus'
+　
 export default class extends Controller {
-　static targets = [ 'test' ]
+　// static targets = [ 'test' ]
+
 　connect() {
 　　console.log('Hello from my_controller.js')
-　　console.log(this.testTarget)
+　　// console.log(this.testTarget)
 　}
 }
 ```

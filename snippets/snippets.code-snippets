@@ -6,11 +6,11 @@
 				"import { Controller } from 'stimulus'",
 				"",
 				"export default class extends Controller {",
-				"  static targets = [ 'test' ]",
+				"  // static targets = [ 'test' ]",
 				"",
 				"  connect() {",
 				"    console.log('Hello from $TM_FILENAME')",
-				"    console.log(this.testTarget)",
+				"    // console.log(this.testTarget)",
 				"  }",
 				"}"
 			],
