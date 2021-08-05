@@ -1,19 +1,33 @@
 {
 	"Controller template": {
-			"scope": "javascript,typescript",
-			"prefix": "sjc",
-			"body": [
-				"import { Controller } from 'stimulus'",
-				"",
-				"export default class extends Controller {",
-				"  // static targets = [ 'test' ]",
-				"",
-				"  connect() {",
-				"    console.log('Hello from $TM_FILENAME')",
-				"    // console.log(this.testTarget)",
-				"  }",
-				"}"
-			],
-			"description": "StimulusJS Controller template"
-		}
+		"scope": "javascript,typescript",
+		"prefix": "sjc",
+		"body": [
+			"import { Controller } from 'stimulus'",
+			"",
+			"export default class extends Controller {",
+			"  // static targets = [ 'test' ]",
+			"",
+			"  connect() {",
+			"    console.log('Hello from $TM_FILENAME')",
+			"    // console.log(this.testTarget)",
+			"  }",
+			"}"
+		],
+		"description": "StimulusJS Controller template"
+	},
+	"StimulusJS Initialization for Webpack": {
+		"scope": "javascript,typescript",
+		"prefix": "sjw",
+		"body": [
+			"import { Application } from 'stimulus'",
+			"import { definitionsFromContext } from 'stimulus/webpack-helpers'",
+			"",
+			"// initialize StimulusJS",
+			"const application = Application.start()",
+			"const context = require.context('./controllers', true, /\\.js$/)",
+			"application.load(definitionsFromContext(context))"
+		],
+		"description": "StimulusJS Initialization for Webpack"
+	},
 }

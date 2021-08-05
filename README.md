@@ -6,7 +6,7 @@ So far, that's all we provide:
 
 - `sjc`: creates a StimulusJS controller template
 
-Example:
+Generates:
 
 ```
 import { Controller } from 'stimulus'
@@ -19,4 +19,18 @@ export default class extends Controller {
 　　// console.log(this.testTarget)
 　}
 }
+```
+
+- `sjw`: StimulusJS Initialization for Webpack
+
+Generates: 
+
+```
+import { Application } from "stimulus"
+import { definitionsFromContext } from "stimulus/webpack-helpers"
+　
+// init for Stimulus
+const application = Application.start()
+const context = require.context("./controllers", true, /\.js$/)
+application.load(definitionsFromContext(context))
 ```
