@@ -10,14 +10,14 @@ Generates:
 
 ```
 import { Controller } from 'stimulus'
-　
-export default class extends Controller {
-　// static targets = [ 'test' ]
 
-　connect() {
-　　console.log('Hello from my_controller.js')
-　　// console.log(this.testTarget)
-　}
+export default class extends Controller {
+  // static targets = [ 'test' ]
+
+  connect() {
+    console.log('Hello from my_controller.js')
+  // console.log(this.testTarget)
+  }
 }
 ```
 
@@ -28,9 +28,23 @@ Generates:
 ```
 import { Application } from "stimulus"
 import { definitionsFromContext } from "stimulus/webpack-helpers"
-　
+
 // init for Stimulus
 const application = Application.start()
 const context = require.context("./controllers", true, /\.js$/)
 application.load(definitionsFromContext(context))
+```
+
+- `sjr`: StimulusJS Initialization for Ruby on Rails with hotwire
+
+Generates: 
+
+```
+import { Controller } from '@hotwired/stimulus'
+
+export default class extends Controller {
+  connect() {
+
+  }
+}
 ```

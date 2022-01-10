@@ -30,4 +30,19 @@
 		],
 		"description": "StimulusJS Initialization for Webpack"
 	},
+	"StimulusJS Initialization for Ruby on Rails with Hotwire": {
+		"scope": "javascript,typescript",
+		"prefix": "sjr",
+		"body": [
+			"import { Controller } from '@hotwired/stimulus'",
+			"",
+			"export default class extends Controller {",
+			"",
+			"  connect() {",
+			"",
+			"  }",
+			"}"
+		],
+		"description": "StimulusJS Controller template for Ruby on Rails with Hotwire"
+	},
 }
