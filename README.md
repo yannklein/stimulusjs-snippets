@@ -1,6 +1,9 @@
 # StimulusJS Snippets for VS code
 A very simple set of snippets to simplify your StimulusJS dev life.
 
+## Kudos to:
+- [Nejdet Kadir Bektaş](https://github.com/nejdetkadir) for adding the Hotwire dedicated snippets
+
 ## Available snippets
 So far, that's all we provide:
 
@@ -65,6 +68,3 @@ window.Stimulus = Application.start()
 const context = require.context("./controllers", true, /\.js$/)
 Stimulus.load(definitionsFromContext(context))
 ```
-
-## Kudos to:
-- [Nejdet Kadir Bektaş](https://github.com/nejdetkadir) for adding the Hotwire dedicated snippets
