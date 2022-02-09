@@ -4,7 +4,7 @@ A very simple set of snippets to simplify your StimulusJS dev life.
 ## Available snippets
 So far, that's all we provide:
 
-- `sjc`: creates a StimulusJS controller template
+- `sc`: creates a StimulusJS controller template for Webpack
 
 Generates:
 
@@ -21,7 +21,7 @@ export default class extends Controller {
 }
 ```
 
-- `sjw`: StimulusJS Initialization for Webpack
+- `sw`: StimulusJS Initialization for Webpack
 
 Generates: 
 
@@ -35,7 +35,7 @@ const context = require.context("./controllers", true, /\.js$/)
 application.load(definitionsFromContext(context))
 ```
 
-- `sjr`: StimulusJS Initialization for Ruby on Rails with hotwire
+- `sch`: creates a StimulusJS controller template for Ruby on Rails with hotwire
 
 Generates: 
 
@@ -43,8 +43,25 @@ Generates:
 import { Controller } from '@hotwired/stimulus'
 
 export default class extends Controller {
+  // static targets = [ 'test' ]
+  
   connect() {
-
+    console.log('Hello from my_controller.js')
+  // console.log(this.testTarget)
   }
 }
+```
+
+
+- `swh`: StimulusJS Initialization for for Ruby on Rails with hotwire
+
+Generates: 
+
+```
+import { Application } from "@hotwired/stimulus"
+import { definitionsFromContext } from "@hotwired/stimulus-webpack-helpers"
+
+window.Stimulus = Application.start()
+const context = require.context("./controllers", true, /\.js$/)
+Stimulus.load(definitionsFromContext(context))
 ```
