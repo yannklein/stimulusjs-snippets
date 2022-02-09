@@ -2,7 +2,7 @@
     "name": "stimulusjs-snippets",
     "displayName": "StimulusJS Snippets",
     "description": "Simple Snippets for Stimulus JS",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "engines": {
         "vscode": "^1.58.0"
     },
