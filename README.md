@@ -21,7 +21,7 @@ export default class extends Controller {
 }
 ```
 
-- `sw`: StimulusJS Initialization for Webpack
+- `si`: StimulusJS Initialization for Webpack
 
 Generates: 
 
@@ -53,7 +53,7 @@ export default class extends Controller {
 ```
 
 
-- `swh`: StimulusJS Initialization for for Ruby on Rails with hotwire
+- `sih`: StimulusJS Initialization for for Ruby on Rails with hotwire
 
 Generates: 
 
