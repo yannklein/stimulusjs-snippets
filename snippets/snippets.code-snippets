@@ -1,7 +1,7 @@
 {
-	"Controller template": {
+	"StimulusJS Controller template for Webpack": {
 		"scope": "javascript,typescript",
-		"prefix": "sjc",
+		"prefix": "sc",
 		"body": [
 			"import { Controller } from 'stimulus'",
 			"",
@@ -14,11 +14,11 @@
 			"  }",
 			"}"
 		],
-		"description": "StimulusJS Controller template"
+		"description": "StimulusJS Controller template for Webpack"
 	},
 	"StimulusJS Initialization for Webpack": {
 		"scope": "javascript,typescript",
-		"prefix": "sjw",
+		"prefix": "si",
 		"body": [
 			"import { Application } from 'stimulus'",
 			"import { definitionsFromContext } from 'stimulus/webpack-helpers'",
@@ -29,5 +29,36 @@
 			"application.load(definitionsFromContext(context))"
 		],
 		"description": "StimulusJS Initialization for Webpack"
+	},
+	"Controller template for Ruby on Rails with Hotwire": {
+		"scope": "javascript,typescript",
+		"prefix": "sch",
+		"body": [
+			"import { Controller } from '@hotwired/stimulus'",
+			"",
+			"export default class extends Controller {",
+			"  // static targets = [ 'test' ]",
+			"",
+			"  connect() {",
+			"    console.log('Hello from $TM_FILENAME')",
+			"    // console.log(this.testTarget)",
+			"  }",
+			"}"
+		],
+		"description": "StimulusJS Controller template for Ruby on Rails with Hotwire"
+	},
+	"StimulusJS Initialization for Ruby on Rails with Hotwire": {
+		"scope": "javascript,typescript",
+		"prefix": "sih",
+		"body": [
+			"import { Application } from '@hotwired/stimulus'",
+			"import { definitionsFromContext } from '@hotwired/stimulus-webpack-helpers'",
+			"",
+			"// initialize StimulusJS",
+			"window.Stimulus = Application.start()",
+			"const context = require.context('./controllers', true, /\\.js$/)",
+			"Stimulus.load(definitionsFromContext(context))"
+		],
+		"description": "StimulusJS Initialization for Ruby on Rails with Hotwire"
 	},
 }

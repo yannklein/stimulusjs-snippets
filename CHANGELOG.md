@@ -1,8 +1,8 @@
 # Change Log
 
-All notable changes to the "stimulusjs-snippets" extension will be documented in this file.
+## [0.5.0]
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Add `sjr` command for Ruby on Rails with Hotwire
 
 ## [Unreleased]
 
