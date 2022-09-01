@@ -11,7 +11,7 @@ So far, that's all we provide:
 
 Generates:
 
-```
+```js
 import { Controller } from 'stimulus'
 
 export default class extends Controller {
@@ -28,7 +28,7 @@ export default class extends Controller {
 
 Generates: 
 
-```
+```js
 import { Application } from "stimulus"
 import { definitionsFromContext } from "stimulus/webpack-helpers"
 
@@ -42,7 +42,7 @@ application.load(definitionsFromContext(context))
 
 Generates: 
 
-```
+```js
 import { Controller } from '@hotwired/stimulus'
 
 export default class extends Controller {
@@ -60,7 +60,7 @@ export default class extends Controller {
 
 Generates: 
 
-```
+```js
 import { Application } from "@hotwired/stimulus"
 import { definitionsFromContext } from "@hotwired/stimulus-webpack-helpers"
 
