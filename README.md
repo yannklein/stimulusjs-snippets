@@ -68,3 +68,5 @@ window.Stimulus = Application.start()
 const context = require.context("./controllers", true, /\.js$/)
 Stimulus.load(definitionsFromContext(context))
 ```
+
+Extension manager link (change the publisher name!): https://marketplace.visualstudio.com/manage/publishers/yannklein?auth_redirect=True
